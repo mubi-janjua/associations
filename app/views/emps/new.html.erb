@@ -1,0 +1,14 @@
+<h1>employee new</h1>
+<%= form_for @empp do |f| %>
+<p>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+</p>
+<p>
+	<%= f.label :department_id %>
+	<%= f.text_field :department_id %>
+</p>
+<p>
+	<%= f.submit %>
+</p>
+<% end %>

@@ -1,0 +1,13 @@
+<h1>listing all employee</h1>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Department Id</th>
+	</tr>
+    <% @empps.each do |d| %>
+    <tr>
+    	<th><%= d.name %></th>
+    	<th><%= d.department.try(:id) %></th>
+    </tr>
+    <% end %>
+</table>

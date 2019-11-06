@@ -1,0 +1,14 @@
+<h1>list of department</h1>
+
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+	</tr>
+	<% @deps.each do |f| %>
+	<tr>
+		<th><%= f.id %></th>
+		<th><%= f.name %></th>
+	</tr>
+	<% end %>
+</table>
