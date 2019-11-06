@@ -1,0 +1,14 @@
+<h1>form</h1>
+<%= form_for @developer do |f| %>
+<p>
+<%= f.label :name %>
+<%= f.text_field :name %>
+</p>
+<p>
+<%= f.label :team_id %>
+<%= f.text_field :team_id %>
+</p>
+<p>
+<%= f.submit %>
+</p>
+<% end %>

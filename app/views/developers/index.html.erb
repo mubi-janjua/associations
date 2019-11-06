@@ -1,0 +1,13 @@
+<h1>all developers</h1>
+<table>
+	<tr>
+		<td>Name</td>
+		<td>Team</td>
+	</tr>
+	<% @developers.each do |d| %>
+	<tr>
+	<th><%= d.name %></th>
+	<th><%= d.team.try(:id) %></th>	
+	</tr>
+</table>
+<% end%>
