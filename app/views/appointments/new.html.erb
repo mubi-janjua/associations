@@ -1,0 +1,18 @@
+<h1>appointment </h1>
+<%= form_for @ap do |c| %>
+<p>
+<%= c.label :PhysicianId %>
+<%= c.text_field :physician_id %>
+</p>
+<p>
+	<%= c.label :PatientId %>
+	<%= c.text_field :patient_id %>
+</p>
+<p>
+	<%= c.label :Appointmentdate %>
+	<%= c.datetime_field :appointment_date %>
+</p>
+<p>
+	<%= c.submit %>
+</p>
+<% end %>

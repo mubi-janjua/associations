@@ -1,0 +1,21 @@
+<h1>list</h1>
+<table>
+	<tr>
+		<th>id</th>
+		<th>Physician Id</th>
+		<th>physician name</th>
+		<th>Patient Id</th>
+		<th>patient name</th>
+		<th>DateTime</th>
+	</tr>
+	<% @aps.each do |d| %>
+	<tr>
+		<td><%= d.id %></td>
+		<td><%= d.physician.try(:id) %></td>
+		<td><%= d.physician.try (:name) %>t</td>
+		<td><%= d.patient.try(:id) %></td>
+		<td><%= d.patient.try(:name) %></td>
+		<td><%= d.appointment_date %></td>
+	</tr>
+	<% end %>
+</table>

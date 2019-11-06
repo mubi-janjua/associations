@@ -1,0 +1,14 @@
+<h1>Patient</h1>
+<%= form_for @phy do |b| %>
+<p>
+	<%= b.label :id %>
+	<%= b.text_field :id %>
+</p>
+<p>
+	<%= b.label :name %>
+	<%= b.text_field :name %>
+</p>
+<p>
+	<%= b.submit %> 
+</p>
+<% end %>

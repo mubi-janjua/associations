@@ -1,0 +1,14 @@
+<h1>list</h1>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>name</th>
+
+	</tr>
+	<% @phys.each do |b| %>
+	<tr>
+		<th><%= b.id %></th>
+		<td><%= b.name %></td>
+	</tr>
+	<% end %>
+</table>

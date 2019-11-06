@@ -1,0 +1,13 @@
+<h1>list of all</h1>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+	</tr>
+	<% @pats.each do |a| %>
+	<tr>
+		<th><%= a.id %></th>
+		<th><%= a.name %></th>
+	</tr>
+	<% end %>
+</table>
