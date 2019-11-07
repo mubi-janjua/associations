@@ -1,0 +1,15 @@
+<h1>account history</h1>
+
+<%= form_for @histt do |h| %>
+<p>
+	<%= h.label :rank %>
+	<%= h.text_field :rank %>
+</p>
+<p>
+	<%= h.label :accountId %>
+	<%= h.text_field :account_id %>
+</p>
+<p>
+	<%= h.submit %>
+</p>
+<% end %>

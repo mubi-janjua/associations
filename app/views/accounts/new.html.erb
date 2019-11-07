@@ -1,0 +1,14 @@
+<h1>new</h1>
+<%= form_for @acc do |a| %>
+<p>
+	<%= a.label :number %>
+	<%= a.text_field :number %>
+</p>
+<p>
+	<%= a.label :supplierId %>
+	<%= a.text_field :supplier_id %>
+</p>
+<p>
+	<%= a.submit %>
+</p>
+<% end %>

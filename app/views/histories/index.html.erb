@@ -1,0 +1,18 @@
+<h1>list</h1>
+<table>
+	<tr>
+		<th>id</th>
+		<th>Rank</th>
+		<th>Account id</th>
+	</tr>
+	<% @histts.each do |h| %>
+	<tr>
+		<td><%= h.id %></td>
+		<td><%= h.rank %></td>
+		<td><%= h.account.try(:id) %></td>
+	</tr>
+	<% end %>
+</table>
+
+
+		
